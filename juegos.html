@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos | NovaLearn</title>
+
+    <!-- Conserva los estilos generales de tu página -->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="juegos.css">
+</head>
+<body class="games-page">
+
+   
+<header class="site-header">
+    <a href="index.html" class="site-brand">
+        <img src="imagenes.1/LOGO.png" alt="Logo de NovaLearn">
+        
+    </a>
+
+    <nav class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="guias.html">Actividades</a>
+        <a href="videos.html">Videos</a>
+        <a href="juegos.html" class="active">Juegos</a>
+        <a href="index.html#nosotros">Nosotros</a>
+    </nav>
+</header>
+
+
+    <main class="games-main">
+        <section class="games-hero">
+            
+            <h1>¡Aprende inglés jugando! 🎮</h1>
+            <p>
+                Diviértete, practica tu inglés y gana puntos
+                mientras aprendes nuevas palabras.
+            </p>
+            <div class="games-total">
+                ⭐ Tus puntos en esta sesión:
+                <strong id="totalPoints">0</strong>
+            </div>
+        </section>
+
+        <section class="games-list" id="gamesMenu">
+            <button class="game-card" data-game="memory">
+                <span class="game-emoji">🃏</span>
+                <h2>Memory Game</h2>
+                <p>Encuentra las parejas de palabras en inglés y español.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+
+            <button class="game-card" data-game="order">
+                <span class="game-emoji">🔤</span>
+                <h2>Ordena la oración</h2>
+                <p>Organiza las palabras para formar una oración correcta.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+
+            <button class="game-card" data-game="search">
+                <span class="game-emoji">🔎</span>
+                <h2>Word Search</h2>
+                <p>Encuentra palabras escondidas en la cuadrícula.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+
+            <button class="game-card" data-game="quiz">
+                <span class="game-emoji">⭐</span>
+                <h2>English Quiz</h2>
+                <p>Responde preguntas y demuestra lo que sabes.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+
+            <button class="game-card" data-game="complete">
+                <span class="game-emoji">🧩</span>
+                <h2>Completa la palabra</h2>
+                <p>Descubre las letras que faltan en cada palabra.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+
+            <button class="game-card" data-game="guess">
+                <span class="game-emoji">🎯</span>
+                <h2>Adivina la palabra</h2>
+                <p>Lee una pista en español y encuentra la palabra en inglés.</p>
+                <span class="game-play">Jugar ahora →</span>
+            </button>
+        </section>
+
+        <section class="game-area" id="gameArea" hidden>
+            <button class="back-button" id="backButton">← Volver a los juegos</button>
+            <div id="gameContent"></div>
+        </section>
+    </main>
+
+    <footer class="games-footer">
+        English Made Easy · Un proyecto del SENA
+    </footer>
+
+    <script src="juegos.js"></script>
+</body>
+</html>
